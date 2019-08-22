@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    </head>
 <body>
-    <form id='login-form'>
-        <table>
-            <tr>
-                <td>Author</td>
-                <td><input type="text" name="username" /></td>
-            </tr>
-            <tr>
-                <td>Get Random Quote</td>
-                <td><input type="submit"/></td>
-            </tr>
-        </table>
-    </form>
-    <p id="random-quote"></p>
-    <p id="author"></p>
+    <div id="main-container">
+        <form id='login-form' onsubmit="">
+            <table id="table">
+                <tbody id="tbody">
+                    <input type="text" id="inp" name="username" placeholder="Search Author" autocomplete="off">
+                    <input type="submit"/>
+                </tbody>
+            </table><br><br>
+            <div id="quote-author">
+                <p id="random-quote"></p>
+                <p id="author"></p>
+            </div>
+        </form>
+    </div>
 </body>
 <script type="text/javascript" src="app.js"></script>
 </html>
