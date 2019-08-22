@@ -11,6 +11,9 @@ loginForm.addEventListener('submit', evt => {
             quote.innerHTML = data.results[0].content;
             author.innerHTML = data.results[0].author;
         })
-        .catch(error => { quote.innerHTML = "Can't fine a quote :("; } );
+        .catch(error => { 
+            quote.innerHTML = "Can't fine a quote :(";
+            author.innerHTML = "";
+        });
         loginForm.querySelector('input[type="text"]').value = '';
 });
